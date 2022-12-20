@@ -1,0 +1,13 @@
+.image {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.mirror {
+    transform: scaleX(-1);
+}
+
+.grayscale {
+    filter: grayscale(1);
+}

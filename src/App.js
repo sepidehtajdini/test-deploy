@@ -1,37 +1,10 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Post from "./contents/Post";
-import PostAdd from "./contents/PostAdd"
-const abbas = createBrowserRouter([{
-  path: "/",
-  element: (
-    <div>home</div>
-  )
-},
-{
-  path: '/post/:id',
-  element: (<Post />),
+import Container from "./Container";
 
-},
-{
-  path:"/post/not-found",
-  element:(<div>Nist</div>)
-},
-{
-  path: '/add-post',
-  element:
-    (<div>
-      <PostAdd />
-    </div>)
-}
-])
 
 function App() {
 
   return (
-    <div>
-      <RouterProvider router={abbas} />
-
-    </div>
+    <Container />
   );
 }
 export default App;
